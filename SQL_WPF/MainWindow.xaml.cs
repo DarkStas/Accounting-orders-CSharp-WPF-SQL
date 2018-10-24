@@ -810,7 +810,7 @@ namespace SQL_WPF
 					}
 					else
 					{
-						mCmd = new MySqlCommand("SELECT id, date, client, sum, order_list FROM order1 order by id", mConn);
+						mCmd = new MySqlCommand("SELECT id, date, client, sum FROM order1 order by id", mConn);
 
 					}
 
@@ -826,7 +826,7 @@ namespace SQL_WPF
 					this.categoryDataGridatDatabase.Columns[1].Header = "Date";
 					this.categoryDataGridatDatabase.Columns[2].Header = "Client";
 					this.categoryDataGridatDatabase.Columns[3].Header = "Sum";
-					this.categoryDataGridatDatabase.Columns[4].Header = "Order list";
+					//this.categoryDataGridatDatabase.Columns[4].Header = "Order list";
 
 					Button_DataSearch.Background = Brushes.Green;
 					//mConn.Close();
